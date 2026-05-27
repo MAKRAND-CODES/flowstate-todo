@@ -143,8 +143,7 @@ export default function Signup() {
   );
 }*/
 import { useState } from "react";
-
-import axios from "axios";
+import API from "../services/api";
 
 import {
   useNavigate,
@@ -169,7 +168,7 @@ export default function Signup() {
 
       try {
 
-        await axios.post(
+        await API.post(
           "/auth/signup",
           {
             name,
