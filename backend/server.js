@@ -128,13 +128,26 @@ app.use(
 
     origin: [
 
-      "https://flowstate-todo-3kizpuu04-makrand-codes-projects.vercel.app/"
+      "http://localhost:5173",
+
+      "https://flowstate-todo-3kizpuu04-makrand-codes-projects.vercel.app",
+
+      "https://flowstate-todo-git-main-makrand-codes-projects.vercel.app",
+
+      "https://flowstate-todo-dyznojzsb-makrand-codes-projects.vercel.app"
+
     ],
-    methods: ["GET",
+
+    methods: [
+
+      "GET",
       "POST",
       "PUT",
       "DELETE",
+      "OPTIONS"
+
     ],
+
     credentials: true,
 
   })
@@ -175,4 +188,3 @@ app.listen(PORT, () => {
   );
 
 });
-
