@@ -14,20 +14,20 @@ const app = express();
 /* TEST ROUTE */
 //app.get("/", (req, res) => {
 
-  //res.send("FlowState API Running");
+//res.send("FlowState API Running");
 
 //});
 
 /* PORT */
 //const PORT =
-  //process.env.PORT || 5000;
+//process.env.PORT || 5000;
 
 /* SERVER */
 //app.listen(PORT, () => {
 
-  ////console.log(
-    //`Server running on ${PORT}`
-  //);
+////console.log(
+//`Server running on ${PORT}`
+//);
 
 //});
 /*const express = require("express");
@@ -130,7 +130,11 @@ app.use(
 
       "https://flowstate-todo-3kizpuu04-makrand-codes-projects.vercel.app/"
     ],
-
+    methods: ["GET",
+      "POST",
+      "PUT",
+      "DELETE",
+    ],
     credentials: true,
 
   })
